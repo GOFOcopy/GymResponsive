@@ -1,8 +1,156 @@
 @import url('https://fonts.googleapis.com/css?family=Droid+Sans');/*--- Paragraph Font --*/
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed'); /*--- Headings Font --*/
 
-* {
+* {   /* Reset style selector covers entire HTML doc gets rid of any default setting browser wants to include.*/
 	margin: 0;
 	border: 0;
 	padding: 0;
+}
+
+body {
+	background: #F0F0F0;
+	color: #555;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	line-height: 190%;
+	text-align: center;
+	text-transform: uppercase;
+}
+h3 {
+	font-size: 190%;
+	padding: 5% 0;
+}
+h4 {
+	font-size: 170%;
+	padding: 5% 0;
+}
+h5 {
+	font-size: 120%;
+	color: #959595;
+}
+/* Simple image style */
+img {
+	max-width: 100%;
+}
+header {
+	background: #405580;
+	height: 86px;
+	position: fixed; /* stays in same spot on screen */
+	z-index: 1000;
+	width: 100%;
+	opacity: .9;
+	top: 0;
+}
+#header-inner {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+#logo {
+	background: url(img/the-gym.png);
+	float: left;
+	width: 200px;
+	height: 60px;
+	margin: 20px;
+}
+/*-----Navigation-----*/
+nav {
+	float: right;
+	padding: 35px 20px 0 0;
+}
+#menu-icon {
+	background: url(img/icon.png) center;
+	width: 40px;
+	height: 34px;
+	display: hidden;
+}
+ul {
+	list-style: none; /* takes away bullets */
+}
+nav ul li {
+	font-family: sans-serif;
+	display: inline-block; /*displays inline*/ 
+	padding: 10px;
+	float: left;
+	font-size: 110%;
+}
+nav ul li a {
+	color: #F0F0F0;
+	text-decoration: none;
+	font-weight: 700;
+}
+a:hover, .current {
+	text-decoration: underline;
+}
+
+/*-----Start Slider------*/
+.slider {
+	margin-top: 90px;
+}
+.bx-controls {    /*hide the slider controls*/
+	display: none; 
+}
+
+/*-----Start Inner Wrapper------(contains all content within the body so can only flex up to 1200px allow content to center)*/
+#inner-wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.one-third {
+	width: 29%;
+	float: left;
+	margin: 2%;
+}
+.circle {
+	margin: 0 auto;
+	width: 150px;
+	height: 150px;
+	background-color: #405580;
+	border-radius: 50%; /*Turns square into circle*/
+}
+.one-third i {
+	color: #F0F0F0;
+	font-size: 555%;
+	padding: 20%;
+}
+p {
+	font-family: 'Droid Sans', sans-serif;
+	text-align: justify;
+	text-transform: none;
+	font-size: 125%;
+	padding: 2%;
+}
+
+/*------Div Clearfix----horizontal rule where nothing can display inline with div (clears the float)*/
+.clearfix {
+	clear: both;
+	padding: 2%;
+}
+
+/*------Center section with pic and highlights-------*/
+article {
+	float: left;
+	width: 50%;
+	padding: 4%;
+}
+.circle-image {
+	border-radius: 70%; /*creates oval shape*/
+}
+aside {
+	float: right;
+	width: 35%;
+	padding: 2%;
+}
+aside h3 {
+	text-decoration: underline;
+}
+
+
+/*--------Last one third section with images-------*/
+.one-third img {
+	padding-bottom: 2%;
+}
+
+
+/*----------Start Footer Section---------*/
+footer {
+	background-color: #333;
 }
