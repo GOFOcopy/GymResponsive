@@ -153,4 +153,51 @@ aside h3 {
 /*----------Start Footer Section---------*/
 footer {
 	background-color: #333;
+	overflow: hidden;
+	opacity: .9;
+}
+#footer-inner {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+footer .one-third {
+	width: 33%;
+	margin: 2% 0;
+}
+footer h3 {
+	color: #959595;
+}
+footer p {
+	color: #959595;
+	text-align: center;
+}
+#footer-third {
+	border-right: 1px solid #959595;
+	max-height: 250px;
+	min-height: 250px;
+}
+footer a {
+	color: #959595;
+	text-dectoration: none;
+}
+.social li {
+	display: inline;
+}
+.social i  {
+	font-size: 245%;
+	padding: 2% 6%;
+	color: #959595;
+}
+.social i:hover {
+	color: #F5F5F5;
+}
+h5 a:hover {
+	text-decoration: none;
+	color: #405580;
+}
+/* Start second footer*/
+footer.second {
+	border-top: 1px solid #4D4E50;
+	max-height: 50px;
+	padding-bottom: 1%;
 }
