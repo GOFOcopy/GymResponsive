@@ -200,4 +200,88 @@ footer.second {
 	border-top: 1px solid #4D4E50;
 	max-height: 50px;
 	padding-bottom: 1%;
+	opacity: .95;
+}
+/*----Media Queries! (responsiveness)----*/
+@media screen and (max-width: 768px) {
+	/*Header and nav*/
+	header {
+		position: absolute;
+	}
+	#menu-icon {
+		display: inline-block;
+	}
+	nav:hover ul {
+		display: block; 
+	}
+	nav ul, nav:active ul {
+		display: none;
+		z-index: 1000;
+		position: absolute;
+		background: #405580;
+		width: 50%;   			/* currently going off to right side of screen */
+		padding: 20px;															
+		right: 20px;			/*positions box so it is on the screen*/
+		top: 60px;
+		border: 1px solid #fff;
+		border-radius: 4px 0 4px 4px; /*curves the corners of popout nav*/
+	}
+	nav li {
+		text-align: center;
+		width: 100%;
+	}
+
+	/*Content*/
+	.one-third {
+		width: 100%;  /*Recall that we've changed the width of the screen to a mas of 768px*/
+		margin: 0;
+	}
+	.circle {
+		width: 100px;
+		height: 100px;
+	}
+	.one-third i {
+		font-size: 360%;
+	}
+	/*Article section*/
+	article {
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+	aside {
+		width: 100%;
+	}
+	h4 {
+		font-size: 140%; /*from 170% earlier*/
+	}
+	/* Footer */
+	footer .one-third {
+		width: 100%;
+		margin: 0;
+	}
+	.social i {
+		font-size: 245%;
+	}
+	#footer-third {
+		min-height: 150px;
+		padding-bottom: 10%;
+		border-bottom: 1px solid #959595;
+	}
+	#footer-third-last {
+		margin-bottom: 15%;
+	}
+}
+/* Second media quiry to make font smaller on phone devices*/
+@media screen and (max-width: 478px) {
+	h3 {
+		font-size: 150%;
+	}
+	p {
+		font-size: 100%;
+		margin: 2%;
+	}
+	h4 {
+		font-size: 115%;
+	}
 }
